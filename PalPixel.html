@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+  <div class="grid-container">
+      <div style='background-color:#6C41FF' class="grid-item">1
+    </div>
+    <div class="text">EVERY<p class="textP">PIXEL</p></div>
+  <div class="grid-item" style='background-color:#141414'>6</div>  
+  <div class="grid-item" style='background-color:#1A1A1A'>7</div>
+  <div class="grid-item" style='background-color:#EC5B24'>8</div>
+  </div>
+  <div class="grid-container-2 second-line">
+    <div style='background-color:#323232' class="grid-item">1</div>
+    <div class="text">MATTERS...</div>
+  <div class="grid-item" style='background-color:#1A1A1A'>6</div>  
+  <div class="grid-item" style='background-color:#141414'>7</div>
+  </div>
+  <div class="grid-container-3" style="margin-top: -16px;">
+    <div style='background-color:#323232' class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+  <div class="grid-item" style='background-color:#1A1A1A'>6</div>  
+  <div class="grid-item" style='background-color:#141414'>7</div>
+  </div>
+</body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@800&display=swap');
+
+body{
+ background-color: #000;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto 4.5fr auto auto auto;
+  padding: 10px;
+  gap: 5px;
+  width:60%;
+  margin: 0 auto;  
+}
+.grid-container-2{
+  display: grid;
+  grid-template-columns: auto 5.5fr auto auto;
+  padding: 10px;
+  gap: 5px;
+  width:60%;
+  margin: 0 auto;
+}
+.grid-container-3{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 10px;
+  gap: 5px;
+  width:60%;
+  margin: 0 auto;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px 20px 20px;
+  font-size: 50px;
+  text-align: center;
+  border-radius: 10px;
+  height: 60px ;
+  width: 60px;
+  color: white;
+}
+.text{
+  font-size:50px;
+  text-align:left;
+  color:white;
+  font-family: 'Encode Sans', sans-serif;
+  padding: 40px 0px 0px 30px;
+  margin-bottom: -10px;
+  letter-spacing : 10px;
+}
+
+.text>p{
+  margin: -10px 0px;
+  padding: 0px;  
+  color: #E41E84;
+}
+
+.second-line{
+  margin-top: -50px; 
+}
+
+.m-text{
+  margin-right:20px
+}
+
+</style>
+</html>
